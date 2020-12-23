@@ -9,23 +9,92 @@
   <title>Bootstrap</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <a href="#" class="navbar-brand">
       <img src="img/GLStudio.png" alt="logo" width="220" height="80">
     </a>
-    <div class="collapse navbar-collapse">
+    <button 
+      class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarPrincipal" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarPrincipal" class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">Quem somos</a>
+          <a href="#quemsomos" class="nav-link">Quem somos</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Parceiros</a>
+          <a href="#parceiros" class="nav-link">Parceiros</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Serviços</a>
+          <a href="#servicos" class="nav-link">Serviços</a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <section id="quemsomos">
+    <div class="container-fluid text-center margin quem-somos">
+      <h3>Quem Somos</h3>
+      <img src="img/foto3.jpg" class="rounded-circle imagem-cirlular" alt="Quem Somos">
+      <p class="texto-importante">
+        Somos um time comprometido com os resultados.
+      </p>
+    </div>
+  </section>
+
+  <section id="parceiros">
+    <div class="container-fluid text-center margin parceiros">
+      <h3>Parceiros</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="imagem-parceiro" src="img/logo.png" alt="Parceiro A">
+          </div>
+          <div class="col-md-4">
+            <img class="imagem-parceiro" src="img/logo.png" alt="Parceiro B">
+          </div>
+          <div class="col-md-4">
+            <img class="imagem-parceiro" src="img/logo.png" alt="Parceiro C">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="container-fluid text-center margin servicos">
+      <h3>Serviços</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis impedit nemo,
+               reiciendis iste atque, totam, odio culpa temporibus explicabo dicta. 
+               Quidem, nobis eos maxime aperiam ipsum commodi minus tempora!</p>
+            <img class="imagem-servicos" src="img/foto1.jpg" alt="Serviço A">
+          </div>
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis impedit nemo,
+               reiciendis iste atque, totam, odio culpa temporibus explicabo dicta. 
+               Quidem, nobis eos maxime aperiam ipsum commodi minus tempora!</p>
+            <img class="imagem-servicos" src="img/foto2.jpg" alt="Serviço B">
+          </div>
+          <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis impedit nemo,
+               reiciendis iste atque, totam, odio culpa temporibus explicabo dicta. 
+               Quidem, nobis eos maxime aperiam ipsum commodi minus tempora!</p>
+            <img class="imagem-servicos" src="img/foto4.jpg" alt="Serviço C">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid text-center bg-footer">
+    <p>Desenvolvido por Felipe Santos</p>
+  </footer>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
